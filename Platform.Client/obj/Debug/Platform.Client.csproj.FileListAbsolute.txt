@@ -1,0 +1,20 @@
+C:\dev\server\server\net\src\Platform.Client\bin\Debug\Platform.Client.dll
+C:\dev\server\server\net\src\Platform.Client\bin\Debug\Platform.Client.pdb
+C:\dev\server\server\net\src\Platform.Client\bin\Debug\Newtonsoft.Json.dll
+C:\dev\server\server\net\src\Platform.Client\bin\Debug\SearsIL.ShopYourWay.Framework.dll
+C:\dev\server\server\net\src\Platform.Client\bin\Debug\OhioBox.Metrics.dll
+C:\dev\server\server\net\src\Platform.Client\bin\Debug\NLog.dll
+C:\dev\server\server\net\src\Platform.Client\bin\Debug\SearsIL.ShopYourWay.Framework.pdb
+C:\dev\server\server\net\src\Platform.Client\bin\Debug\Newtonsoft.Json.xml
+C:\dev\server\server\net\src\Platform.Client\bin\Debug\OhioBox.Metrics.pdb
+C:\dev\server\server\net\src\Platform.Client\obj\Debug\Platform.Client.csprojResolveAssemblyReference.cache
+C:\dev\server\server\net\src\Platform.Client\obj\Debug\Platform.Client.dll
+C:\dev\server\server\net\src\Platform.Client\obj\Debug\Platform.Client.pdb
+C:\hackathon 2016\funnyalfie\Platform.Client\bin\Debug\Platform.Client.dll
+C:\hackathon 2016\funnyalfie\Platform.Client\bin\Debug\Platform.Client.pdb
+C:\hackathon 2016\funnyalfie\Platform.Client\bin\Debug\SearsIL.ShopYourWay.Framework.dll
+C:\hackathon 2016\funnyalfie\Platform.Client\bin\Debug\NLog.dll
+C:\hackathon 2016\funnyalfie\Platform.Client\bin\Debug\SearsIL.ShopYourWay.Framework.pdb
+C:\hackathon 2016\funnyalfie\Platform.Client\obj\Debug\Platform.Client.csprojResolveAssemblyReference.cache
+C:\hackathon 2016\funnyalfie\Platform.Client\obj\Debug\Platform.Client.dll
+C:\hackathon 2016\funnyalfie\Platform.Client\obj\Debug\Platform.Client.pdb

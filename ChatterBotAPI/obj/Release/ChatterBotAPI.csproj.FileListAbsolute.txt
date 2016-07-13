@@ -1,0 +1,3 @@
+C:\hackathon 2016\funnyalfie\ChatterBotAPI\bin\Release\ChatterBotAPI.dll
+C:\hackathon 2016\funnyalfie\ChatterBotAPI\obj\Release\ChatterBotAPI.csprojResolveAssemblyReference.cache
+C:\hackathon 2016\funnyalfie\ChatterBotAPI\obj\Release\ChatterBotAPI.dll

@@ -1,0 +1,5 @@
+C:\hackathon 2016\funnyalfie\ChatterBotAPI\bin\Debug\ChatterBotAPI.dll
+C:\hackathon 2016\funnyalfie\ChatterBotAPI\bin\Debug\ChatterBotAPI.pdb
+C:\hackathon 2016\funnyalfie\ChatterBotAPI\obj\Debug\ChatterBotAPI.csprojResolveAssemblyReference.cache
+C:\hackathon 2016\funnyalfie\ChatterBotAPI\obj\Debug\ChatterBotAPI.dll
+C:\hackathon 2016\funnyalfie\ChatterBotAPI\obj\Debug\ChatterBotAPI.pdb

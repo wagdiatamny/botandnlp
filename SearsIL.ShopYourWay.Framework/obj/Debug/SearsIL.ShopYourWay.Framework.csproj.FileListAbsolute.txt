@@ -1,0 +1,16 @@
+C:\dev\server\server\net\src\SearsIL.ShopYourWay.Framework\bin\Debug\SearsIL.ShopYourWay.Framework.dll
+C:\dev\server\server\net\src\SearsIL.ShopYourWay.Framework\bin\Debug\SearsIL.ShopYourWay.Framework.pdb
+C:\dev\server\server\net\src\SearsIL.ShopYourWay.Framework\bin\Debug\CavemanTools.dll
+C:\dev\server\server\net\src\SearsIL.ShopYourWay.Framework\bin\Debug\Newtonsoft.Json.dll
+C:\dev\server\server\net\src\SearsIL.ShopYourWay.Framework\bin\Debug\NLog.dll
+C:\dev\server\server\net\src\SearsIL.ShopYourWay.Framework\bin\Debug\OhioBox.Metrics.dll
+C:\dev\server\server\net\src\SearsIL.ShopYourWay.Framework\bin\Debug\Newtonsoft.Json.xml
+C:\dev\server\server\net\src\SearsIL.ShopYourWay.Framework\bin\Debug\OhioBox.Metrics.pdb
+C:\dev\server\server\net\src\SearsIL.ShopYourWay.Framework\obj\Debug\SearsIL.ShopYourWay.Framework.csprojResolveAssemblyReference.cache
+C:\dev\server\server\net\src\SearsIL.ShopYourWay.Framework\obj\Debug\SearsIL.ShopYourWay.Framework.dll
+C:\dev\server\server\net\src\SearsIL.ShopYourWay.Framework\obj\Debug\SearsIL.ShopYourWay.Framework.pdb
+C:\hackathon 2016\funnyalfie\SearsIL.ShopYourWay.Framework\bin\Debug\SearsIL.ShopYourWay.Framework.dll
+C:\hackathon 2016\funnyalfie\SearsIL.ShopYourWay.Framework\bin\Debug\SearsIL.ShopYourWay.Framework.pdb
+C:\hackathon 2016\funnyalfie\SearsIL.ShopYourWay.Framework\obj\Debug\SearsIL.ShopYourWay.Framework.dll
+C:\hackathon 2016\funnyalfie\SearsIL.ShopYourWay.Framework\obj\Debug\SearsIL.ShopYourWay.Framework.pdb
+C:\hackathon 2016\funnyalfie\SearsIL.ShopYourWay.Framework\obj\Debug\SearsIL.ShopYourWay.Framework.csprojResolveAssemblyReference.cache

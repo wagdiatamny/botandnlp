@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38CEE522-BA7A-4EC9-BE42-EB84E811799D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SearsIL.ShopYourWay.Framework</RootNamespace>
+    <AssemblyName>SearsIL.ShopYourWay.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CavemanTools">
+      <HintPath>..\..\lib\CavemanTools\CavemanTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\..\lib\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersionInfo.cs">
+      <Link>Properties\AssemblyVersionInfo.cs</Link>
+    </Compile>
+    <Compile Include="Configuration\Config.cs" />
+    <Compile Include="DataAccess\ConnectionStringProvider.cs" />
+    <Compile Include="DateTimeExtensions.cs" />
+    <Compile Include="DateTimeProvider.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
+    <Compile Include="Exceptions\IBadRequestException.cs" />
+    <Compile Include="Exceptions\IForbiddenException.cs" />
+    <Compile Include="Exceptions\ILogFatalException.cs" />
+    <Compile Include="Exceptions\ILogInfoException.cs" />
+    <Compile Include="Exceptions\IResourceNotFoundException.cs" />
+    <Compile Include="Exceptions\IUnauthorizedException.cs" />
+    <Compile Include="Exceptions\ILogWarnException.cs" />
+    <Compile Include="Extensions\ArrayExtensions.cs" />
+    <Compile Include="Extensions\EqualityComparerForExtension.cs" />
+    <Compile Include="Extensions\ObjectParametersExtensions.cs" />
+    <Compile Include="IoC\ContextedImplementationAttribute.cs" />
+    <Compile Include="IoC\NotAServiceAttribute.cs" />
+    <Compile Include="IoC\RegisterAllImplementations.cs" />
+    <Compile Include="IStartable.cs" />
+    <Compile Include="Location\GeoLocation.cs" />
+    <Compile Include="Location\GeoLocationDeserializer.cs" />
+    <Compile Include="Logging\EndpointNotFoundIdentifier.cs" />
+    <Compile Include="Logging\LoggingParameter.cs" />
+    <Compile Include="Logging\LoggingParametersProvider.cs" />
+    <Compile Include="Logging\SystemEventLogger.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\ILoggingContextParameter.cs" />
+    <Compile Include="Logging\ILogInstaller.cs" />
+    <Compile Include="Logging\ICustomLogger.cs" />
+    <Compile Include="Logging\LoggerFactory.cs" />
+    <Compile Include="Logging\NLogInstaller.cs" />
+    <Compile Include="Parallel\TaskFactory.cs" />
+    <Compile Include="Parallel\TaskLogger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextIllegalCharactersSanitizer.cs" />
+    <Compile Include="WebClient\IWebClient.cs" />
+    <Compile Include="WebClient\IWebClientBuilder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
