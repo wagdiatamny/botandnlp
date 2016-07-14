@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Web.Mvc;
 using ChatterBotAPI;
 using Newtonsoft.Json;
@@ -13,7 +14,7 @@ namespace WebApplication1.Controllers
 			var webClient = GetWebClient();
 			var answer = webClient.UploadValues(new Uri($"https://api.wit.ai/message?v=20160714&q={s}"), "POST", "");
 			var serializedAnswer = JsonConvert.DeserializeObject<AiNlipResponse>(answer);
-			if (serializedAnswer.intent.value == "greeting" && serializedAnswer._text.Contains(" you doing"))
+			if (serializedAnswer.entities.intent.FirstOrDefault().value == "greeting" && serializedAnswer._text.Contains(" you doing"))
 				return "Iam a robot, you pervert";
 			ChatterBotFactory factory = new ChatterBotFactory();
 			
@@ -39,8 +40,19 @@ namespace WebApplication1.Controllers
 		public class AiNlipResponse
 		{
 			public string _text { get; set; }
-			public IntentResponse intent{ get; set; }
+			public Entities entities { get; set; }
 
+		}
+
+		public class Entities
+		{
+			public IntentResponse[] intent { get; set; }
+
+		}
+
+		public class IntentResponse
+		{
+			public string value { get; set; }
 		}
 		public ActionResult About()
 		{
@@ -70,8 +82,5 @@ namespace WebApplication1.Controllers
 		}
 	}
 
-	public class IntentResponse
-	{
-		public string value { get; set; }
-	}
+
 }
