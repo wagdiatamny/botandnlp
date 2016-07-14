@@ -37,6 +37,8 @@ namespace WebApplication1.Controllers
 
 		private string SetResponseAccordingToIntent(string intent, AiNlipResponse response)
 		{
+			if (intent == null)
+				return null;
 			switch (intent)
 			{
 				case "greeting":
