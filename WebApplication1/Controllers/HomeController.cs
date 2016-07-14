@@ -55,11 +55,11 @@ namespace WebApplication1.Controllers
 
 		private string MoneyAcount()
 		{
-			string statment = System.IO.File.ReadAllText(Server.MapPath("~/statment.txt"));
+			string statment = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/statment.txt"));
 
 			if (statment == "third")
 			{
-				System.IO.File.WriteAllText(Server.MapPath("~/statment.txt"), "first");
+				System.IO.File.WriteAllText(Server.MapPath("~/App_Data/statment.txt"), "first");
 				return "ok i will search a gift for your nience for the ammount of 50 dollars";
 			}
 			return null;
@@ -67,11 +67,11 @@ namespace WebApplication1.Controllers
 
 		private string AgeDetection()
 		{
-			string statment = System.IO.File.ReadAllText(Server.MapPath("~/statment.txt"));
+			string statment = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/statment.txt"));
 
 			if (statment == "second")
 			{
-				System.IO.File.WriteAllText(Server.MapPath("~/statment.txt"), "third");
+				System.IO.File.WriteAllText(Server.MapPath("~/App_Data/statment.txt"), "third");
 				return "how much would you like to spend?";
 			}
 
@@ -80,17 +80,17 @@ namespace WebApplication1.Controllers
 
 		private static string ReturnGrettingMessage(AiNlipResponse response)
 		{
-			if (response._text.Contains(" you doing")) return "Iam a robot, you pervert";
+			if (response._text.Contains("how you doing")) return "Iam a robot, you pervert";
 			return null;
 		}
 
 		private string SeekingGift(AiNlipResponse response)
 		{
-			var statment = System.IO.File.ReadAllText(Server.MapPath("~/statment.txt"));
+			var statment = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/statment.txt"));
 
 			if (statment == "" || statment == "first")
 			{
-				System.IO.File.WriteAllText(Server.MapPath("~/statment.txt"),"second");
+				System.IO.File.WriteAllText(Server.MapPath("~/App_Data/statment.txt"),"second");
 				return $"how old is your {response.entities.recipient.FirstOrDefault().value}?";
 			}
 			return null;

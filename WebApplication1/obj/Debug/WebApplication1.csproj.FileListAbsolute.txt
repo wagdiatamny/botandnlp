@@ -87,3 +87,5 @@ C:\hackathon 2016\funnyalfie\WebApplication1\bin\ChatterBotAPI.dll
 C:\hackathon 2016\funnyalfie\WebApplication1\bin\ChatterBotAPI.pdb
 C:\hackathon 2016\funnyalfie\WebApplication1\bin\NAudio.dll
 C:\hackathon 2016\funnyalfie\WebApplication1\bin\NAudio.xml
+C:\hackathon 2016\funnyalfie\WebApplication1\bin\statment.txt
+C:\hackathon 2016\funnyalfie\WebApplication1\bin\App_Data\statment.txt
