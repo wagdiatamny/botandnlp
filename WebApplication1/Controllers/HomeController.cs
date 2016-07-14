@@ -96,9 +96,7 @@ namespace WebApplication1.Controllers
 
 		private string GetIntent(AiNlipResponse serializedAnswer)
 		{
-			if (serializedAnswer.entities.intent.FirstOrDefault() == null)
-				return null;
-			return serializedAnswer.entities.intent.FirstOrDefault().value;
+			return serializedAnswer.entities.intent?.FirstOrDefault()?.value;
 		}
 
 		public class HomeModel
