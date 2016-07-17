@@ -60,7 +60,7 @@ namespace WebApplication1.Controllers
 			if (statment == "third")
 			{
 				System.IO.File.WriteAllText(Server.MapPath("~/App_Data/statment.txt"), "first");
-				return "ok i will search a gift for your nience for the ammount of 50 dollars";
+				return "ok i will search a gift for your niece for the ammount of 50 dollars";
 			}
 			return null;
 		}
@@ -80,7 +80,7 @@ namespace WebApplication1.Controllers
 
 		private static string ReturnGrettingMessage(AiNlipResponse response)
 		{
-			if (response._text.Contains("how you doing")) return "Iam a robot, you pervert";
+			if (response._text.ToLower().Contains("how you doing")) return "Iam a robot, you pervert";
 			return null;
 		}
 
@@ -91,7 +91,7 @@ namespace WebApplication1.Controllers
 			if (statment == "" || statment == "first")
 			{
 				System.IO.File.WriteAllText(Server.MapPath("~/App_Data/statment.txt"),"second");
-				return $"how old is your {response.entities.recipient.FirstOrDefault().value}?";
+				return $"how old is your {response.entities.recipient.FirstOrDefault().value.Replace("my","your")}?";
 			}
 			return null;
 		}
