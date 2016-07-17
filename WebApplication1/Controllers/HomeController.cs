@@ -12,6 +12,11 @@ namespace WebApplication1.Controllers
 	{
 		public string Index(string s)
 		{
+			if (s.Contains("reset the file".ToLower()))
+			{
+				System.IO.File.WriteAllText(Server.MapPath("~/App_Data/statment.txt"), "first");
+				return "Ok, am reseting the file.";
+			}
 			var webClient = GetWebClient();
 			var answer = webClient.UploadValues(new Uri($"https://api.wit.ai/message?v=20160714&q={s}"), "POST", "");
 			var serializedAnswer = JsonConvert.DeserializeObject<AiNlipResponse>(answer);
@@ -91,7 +96,7 @@ namespace WebApplication1.Controllers
 			if (statment == "" || statment == "first")
 			{
 				System.IO.File.WriteAllText(Server.MapPath("~/App_Data/statment.txt"),"second");
-				return $"how old is your {response.entities.recipient.FirstOrDefault().value.Replace("my","your")}?";
+				return $"how old is your {response.entities.recipient.FirstOrDefault().value.Replace("my","")}?";
 			}
 			return null;
 		}
